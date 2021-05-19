@@ -27,7 +27,7 @@
 <!ELEMENT capitulo (titulo, contenido)>
 <!ATTLIST capitulo Npag CDATA #REQUIRED>
 <!ELEMENT contenido (#PCDATA)>
-<!ATTLIST contenido link CDATA #REQUIRED>
+<!ATTLIST contenido enlace CDATA #REQUIRED>
 <!ELEMENT numero (#PCDATA)>
 <!ELEMENT seccion (titulo,contenido)>
 <!ATTLIST seccion Npag CDATA #REQUIRED>
