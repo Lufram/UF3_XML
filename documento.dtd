@@ -29,5 +29,7 @@
 <!ELEMENT contenido (#PCDATA)>
 <!ATTLIST contenido enlace CDATA #REQUIRED>
 <!ELEMENT numero (#PCDATA)>
-<!ELEMENT seccion (titulo,contenido)>
-<!ATTLIST seccion Npag CDATA #REQUIRED>
+<!ELEMENT seccion (articulo)>
+<!ELEMENT articulo (titulo,contenido)>
+<!ATTLIST seccion tipo_seccion CDATA #REQUIRED>
+<!ATTLIST articulo autor CDATA #REQUIRED>
