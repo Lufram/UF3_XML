@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE documentos [
+    <!ELEMENT documentos (libros, periodicos, revistas)>
+
+        <!ATTLIST libros id CDATA #REQUIRED>
+        <!ATTLIST libros tipo_clase (novela | infantil | didactico) #IMPLIED>
+        <!ATTLIST libros numero_paginas CDATA #REQUIRED>
+        <!ELEMENT libros (titulo, capitulos+, indice, sinopsis)>
+
+            <!ELEMENT titulo (#PCDATA)>
+
+            <!ELEMENT capitulos (titulo, contenido)>
+            <!ATTLIST capitulos numero_paginas CDATA #REQUIRED>
+
+                <!ELEMENT titulo (#PCDATA)>
+
+                <!ELEMENT contenido (#PCDATA)>
+                <!ATTLIST contenido enlace CDATA #REQUIRED>
+
+            <!ELEMENT indice (#PCDATA)>
+
+            <!ELEMENT sinopsis (#PCDATA)>  
+
+
+
+
+        <!ATTLIST revistas id CDATA #REQUIRED>
+        <!ATTLIST revistas tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED>
+        <!ATTLIST revistas numero_paginas CDATA #REQUIRED>
+        <!ELEMENT revistas (titulo, numero_revista, indice_contenido, secciones+)>
+
+            <!ELEMENT titulo (#PCDATA)>
+
+            <!ELEMENT numero_revista (#PCDATA)>
+
+            <!ELEMENT indice_contenido (#PCDATA)>
+
+            <!ELEMENT secciones (contenido)>
+            <!ATTLIST seciones numero_paginas CDATA #REQUIRED>
+
+                <!ELEMENT contenido (#PCDATA)>
+                <!ATTLIST contenido enlace CDATA #REQUIRED>
+
+        <!ATTLIST periodicos id CDATA #REQUIRED>
+        <!ATTLIST periodicos tipo_clase (nacionales | internacionales) #IMPLIED>
+        <!ATTLIST periodicos fecha_publicacion CDATA #REQUIRED>
+        <!ELEMENT periodicos (secciones+, indice)>
+
+            <!ELEMENT indice (#PCDATA)>
+
+            <!ATTLIST secciones tipo_seccion (economica | opinion | deportes | nacional | internacional) #IMPLIED>
+            <!ELEMENT secciones (articulos+)>
+
+                <!ATTLIST articulos autor CDATA #REQUIRED>
+                <!ELEMENT articulos (contenido)>
+
+                    <!ATTLIST contenido enlace CDATA #REQUIRED>
+                    <!ELEMENT contenido (#PCDATA)>
+
+]>
+
+<documentos>
+
+    <libros id="Libro1" tipo_clase="novela" numero_paginas="500"> 
+        <titulo>La Biblia</titulo>
+        <capitulos  numero_paginas="250">
+            <titulo>capitulo1</titulo>
+            <contenido enlace="enlace">contenido del capitulo 1</contenido>
+        </capitulos>
+        <capitulos numero_paginas="250">
+            <titulo>capitulo2</titulo>
+             <contenido enlace="enlace">contenido del capitulo 2</contenido>
+        </capitulos>
+        <indice>indice de La Biblia</indice>
+        <sinopsis>resumen de La Biblia</sinopsis>
+    </libros>
+
+    <revistas id="Revista1" tipo_clase="informatica" numero_paginas="200">
+        <titulo>Pccomponentes</titulo>
+        <numero_revista>1</numero_revista>
+        <indice_contenido>indice</indice_contenido>
+        <secciones numero_paginas="100">
+            <contenido enlace="enlace">contenido de la seccion</contenido>
+        </secciones>
+        <secciones numero_paginas="100">
+            <contenido enlace="enlace">contenido de la seccion</contenido>
+        </secciones>
+    </revistas>
+
+    <periodicos id="Peri1" tipo_clase="nacionales" fecha_publicacion="18-07-2001">
+        <indice>indice periodico</indice>
+        <secciones tipo_seccion="economica">
+            <articulos autor="Javier">
+                <contenido enlace="enlace">contenido del articulo</contenido>
+            </articulos>
+            <articulos autor="Pepe">
+                <contenido enlace="enlace">contenido del articulo</contenido>
+            </articulos>
+        </secciones>
+        <secciones tipo_seccion="opinion">
+            <articulos autor="Ismael">
+                <contenido enlace="enlace">contenido del articulo</contenido>
+            </articulos>
+            <articulos autor="Alberto">
+                <contenido enlace="enlace">contenido del articulo</contenido>
+            </articulos>
+        </secciones>
+    </periodicos>
+
+</documentos>
