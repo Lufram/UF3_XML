@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE biblioteca SYSTEM "documento.dtd">
+
+<biblioteca>
+    <libro id="L0001" tipo_clase="novela" Npag="234">
+        <titulo>Cancion de hielo y fuego</titulo>
+        <titulo>Juego de Tronos</titulo>
+        <autor idAutor="A0001">
+            <nombre> George</nombre>
+            <apellido> R.R Martin</apellido>
+        </autor>
+        <sinopsis>adaptación oficial de la brillante novela Juego de Tronos. Ahora, George R. R. Martin se une al aclamado novelista Daniel Abraham y al dibujante Tommy Patterson para insuflar nueva vida a la obra maestra de la fantasía heroica Canción de hielo y fuego como nunca se había visto antes: en una novela gráfica a todo color, dando una visión única sobre el mundo ideado por Martin.Este volumen inicia la adaptación con Juego de tronos, la primera parte de la saga bestseller en todo el mundo que ocupará los primeros cuatro volúmenes de esta serie de novelas gráficas. La colección gestada por George R.R. Martín es una mezcla genial de fantasía épica, traiciones sorprendentes, familias enfrentadas, personajes ricos en matices y giros inesperados, que atrapa al lector en una hipnotizante y peligrosa encrucijada.</sinopsis>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <capitulo Npag="6">
+            <titulo>Prologo</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="10">
+            <titulo>Bran 1</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="19">
+            <titulo>Catelyn 1</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="17">
+            <titulo>Daenerys 1</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="11">
+            <titulo>Eddard 1</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="8">
+            <titulo>Catelyn 2</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="9">
+            <titulo>Arya 1</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="7">
+            <titulo>Bran 2</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="10">
+            <titulo>Tyrion 1</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="10">
+            <titulo>Jon 2</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+    </libro>
+
+    <libro id="L0002" tipo_clase="infantil" Npag="6">
+        <titulo>El pollo Pepe</titulo>
+        <autor idAutor="A0002">
+            <nombre>Nick</nombre>
+            <apellido>Denchfield</apellido>
+        </autor>
+        <sinopsis>El pollo pepe y su mama</sinopsis>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <capitulo Npag="3">
+            <titulo>El Pico</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="3">
+            <titulo>Las Patas</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+    </libro>
+
+    <libro id="L0003" tipo_clase="didactico" Npag="167">
+        <titulo>Escuela de dibujo de anatomia humana</titulo>
+        <autor idAutor="A0003">
+            <nombre>Andras</nombre>
+            <apellido>Szunyoghy</apellido>
+        </autor>
+        <autor idAutor="A0004">
+            <nombre>Gyorgy Feher</nombre>
+            <apellido>Szunyoghy</apellido>
+        </autor>
+        <sinopsis>Neu Neuware; Rechnung mit MwSt.; new item; - Este volumen destaca el importante papel de la anatoma en la s artes plsticas. Los dibujos increblemente detallados del maestro h ngaro Andrs Szunyoghy permiten estudiar las estructuras anatmicas humana y animal. Este paso previo es indispensable para cons eguir una buena representacin, pues agudiza la mirada y ayuda a compre nder la .gura del ser humano y de los animales.</sinopsis>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <capitulo Npag="1">
+            <titulo>Prefacio</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="1">
+            <titulo>Introduccion</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="8">
+            <titulo>Retrato de Rostro</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="12">
+            <titulo>Estudio del movimiento</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="11">
+            <titulo>Estudio de ropaje</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="8">
+            <titulo>Huesos, articulaciones y musculos</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="9">
+            <titulo>Movimiento de las extremidades</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="7">
+            <titulo>musculos de las extremidades superiores</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="12">
+            <titulo>Huesos del tronco</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+        <capitulo Npag="14">
+            <titulo>Ojo, nariz, boca y oreja</titulo>
+            <contenido link="#"></contenido>
+        </capitulo>
+    </libro>
+
+
+    <revista id="R0001" tipo_clase="corazon" Npag="43">
+        <titulo>Hola que ase</titulo>
+        <numero>123</numero>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <seccion Npag="10">
+            <titulo>Momia o famoso?</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="10">
+            <titulo>Tenemos una foto de un truño desde lejos del que hablaremos como si fuera importantisimo</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="10">
+            <titulo>Consejos de mierda para destuir tu vida</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="10">
+            <titulo>Si no soy Almeida por que tengo esta cara de....</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+    </revista>
+
+    <revista id="R0002" tipo_clase="informatica" Npag="14">
+        <titulo>Pc Con putin</titulo>
+        <numero>005</numero>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <seccion Npag="4">
+            <titulo>Como destuir tu pc intentando optimizarlo</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="2">
+            <titulo>Hay algo peor diseñado que word? conoce 6 programas diseñados por monos</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="6">
+            <titulo>Como montar un ordenador y que no te sobre tornillos. Es posible?</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="2">
+            <titulo>Testimonio: "Instale Oracle a la primera" menudo flipao</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+    </revista>
+
+    <revista id="R0003" tipo_clase="coches" Npag="14">
+        <titulo>Max que coxes</titulo>
+        <numero>023</numero>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <seccion Npag="4">
+            <titulo>Nuevo motor 243 valvulas para ir a 30 por poblado</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="2">
+            <titulo>como ser pobre y flipar de coche comiendo macarrones cada dia</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="6">
+            <titulo>Motos que son y por que aparecen de la nada</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="2">
+            <titulo>Aprende arameo antiguo el idioma que hablan los mecanicos</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+    </revista>
+
+
+    <periodico id="P0001" tipo_clase="nacional" fecha_publicacion="02/05/2020">
+        <titulo>OK diario</titulo>
+        <numero>045</numero>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <seccion Npag="4">
+            <titulo>Cosas Nazis</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="4">
+            <titulo>Mas Cosas Nazis</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="4">
+            <titulo>Cosas super Nazis</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="4">
+            <titulo>Mas Cosas super Nazis</titulo>
+            <contenido link="#"></contenido>
+       </seccion>       
+    </periodico>
+
+    <periodico id="P0002" tipo_clase="internacional" fecha_publicacion="02/05/2020">
+        <titulo>Post</titulo>
+        <numero>222</numero>
+        <indice>
+            <contenido link="#"></contenido>
+        </indice>
+        <seccion Npag="4">
+            <titulo>Economia</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="4">
+            <titulo>Problemas del primer mundo</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="4">
+            <titulo>Mira que mal estan en otra parte del mundo</titulo>
+            <contenido link="#"></contenido>
+       </seccion>
+       <seccion Npag="4">
+            <titulo>Se un Zombie</titulo>
+            <contenido link="#"></contenido>
+       </seccion>       
+    </periodico>
+
+
+</biblioteca>
