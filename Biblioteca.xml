@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE Biblioteca SYSTEM "biblioteca(1).dtd">
+
+<Biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../DAM_TELEF%C3%83%C2%93NICA/3%C3%82%C2%BA%20TRIMESTRE%20DAM/LENGUAJES%20DE%20MARCAS/UF_3/Actividad%202.%20%20XML,%20DTD%20y%20XSD/Actividad%202/Biblioteca.xsd">
+
+    <!-- LIBROS -->
+
+    <![CDATA[ Cada libro puede clasificarse por: novela, infantil o didactico]]>
+
+    <libros numero="L0001" tipo_clase="" num_paginas="">
+
+
+        <titulo></titulo>
+        <capitulo num_paginas=" ">
+            <contenido enlace=" "/>
+        </capitulo>
+        <indice></indice>
+        <sinopsis></sinopsis>
+
+    </libros>
+
+
+    <!-- REVISTAS -->
+
+    <![CDATA[  Cada revista puede clasificarse en: informatica, corazon, coches, investigacion u otras.]]>
+
+    <revista numero="R0001" tipo_clase="" num_paginas="">
+
+        <titulo></titulo>
+        <indice></indice>
+        <secciones num_paginas="">
+            <contenido enlace=" "/>
+        </secciones>
+
+    </revista>
+
+    <!-- PERIODICOS -->
+
+    <![CDATA[ Cada seccion puede ser: economica, opinion, deportes, nacional o internacional.]]>
+
+    <periodico numero="P0001">
+
+        <seciones tipo="">
+            <articulos autor="">
+                <contenido enlace=" "/>
+            </articulos>
+        </seciones>
+        <indice></indice>
+
+    </periodico>
+
+
+</Biblioteca>
