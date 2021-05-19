@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--<!DOCTYPE biblioteca SYSTEM "documento.dtd">-->
+<!DOCTYPE biblioteca SYSTEM "documento.dtd">
 
 <biblioteca>
     <libro id="L0001" tipo_clase="novela" Npag="234">
