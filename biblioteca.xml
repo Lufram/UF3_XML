@@ -212,21 +212,29 @@
         <indice>
             <contenido enlace="#"></contenido>
         </indice>
-        <seccion Npag="4">
-            <titulo>Cosas Nazis</titulo>
-            <contenido enlace="#"></contenido>
+        <seccion tipo_seccion="nacional">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Cosas Nazis</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>
-       <seccion Npag="4">
-            <titulo>Mas Cosas Nazis</titulo>
-            <contenido enlace="#"></contenido>
+       <seccion  tipo_seccion="economica">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Mas Cosas Nazis</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>
-       <seccion Npag="4">
-            <titulo>Cosas super Nazis</titulo>
-            <contenido enlace="#"></contenido>
+       <seccion  tipo_seccion="opinion">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Cosas super Nazis</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>
-       <seccion Npag="4">
-            <titulo>Mas Cosas super Nazis</titulo>
-            <contenido enlace="#"></contenido>
+       <seccion  tipo_seccion="internacional">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Mas Cosas super Nazis</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>       
     </periodico>
 
@@ -236,21 +244,29 @@
         <indice>
             <contenido enlace="#"></contenido>
         </indice>
-        <seccion Npag="4">
-            <titulo>Economia</titulo>
-            <contenido enlace="#"></contenido>
+        <seccion  tipo_seccion="economica">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Economia</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>
-       <seccion Npag="4">
-            <titulo>Problemas del primer mundo</titulo>
-            <contenido enlace="#"></contenido>
+       <seccion  tipo_seccion="opinion">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Problemas del primer mundo</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
+        </seccion>
+       <seccion  tipo_seccion="nacional">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Mira que mal estan en otra parte del mundo</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>
-       <seccion Npag="4">
-            <titulo>Mira que mal estan en otra parte del mundo</titulo>
-            <contenido enlace="#"></contenido>
-       </seccion>
-       <seccion Npag="4">
-            <titulo>Se un Zombie</titulo>
-            <contenido enlace="#"></contenido>
+       <seccion  tipo_seccion="internacional">
+            <articulo autor="Perico el de los palotes">
+                <titulo>Se un Zombie</titulo>
+                <contenido enlace="#"></contenido>
+            </articulo>
        </seccion>       
     </periodico>
 
