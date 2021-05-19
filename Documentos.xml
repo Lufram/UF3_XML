@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE documentos [
-    <!ELEMENT documentos (libros, periodicos, revistas)>
+    <!ELEMENT documentos (libros , revistas, periodicos)>
 
         <!ATTLIST libros id CDATA #REQUIRED>
         <!ATTLIST libros tipo_clase (novela | infantil | didactico) #IMPLIED>
@@ -12,8 +12,6 @@
             <!ELEMENT capitulos (titulo, contenido)>
             <!ATTLIST capitulos numero_paginas CDATA #REQUIRED>
 
-                <!ELEMENT titulo (#PCDATA)>
-
                 <!ELEMENT contenido (#PCDATA)>
                 <!ATTLIST contenido enlace CDATA #REQUIRED>
 
@@ -21,41 +19,32 @@
 
             <!ELEMENT sinopsis (#PCDATA)>  
 
-
-
-
         <!ATTLIST revistas id CDATA #REQUIRED>
         <!ATTLIST revistas tipo_clase (informatica | corazon | coches | investigacion | otras) #IMPLIED>
         <!ATTLIST revistas numero_paginas CDATA #REQUIRED>
         <!ELEMENT revistas (titulo, numero_revista, indice_contenido, secciones+)>
-
-            <!ELEMENT titulo (#PCDATA)>
 
             <!ELEMENT numero_revista (#PCDATA)>
 
             <!ELEMENT indice_contenido (#PCDATA)>
 
             <!ELEMENT secciones (contenido)>
-            <!ATTLIST seciones numero_paginas CDATA #REQUIRED>
+            <!ATTLIST secciones numero_paginas CDATA #REQUIRED>
 
-                <!ELEMENT contenido (#PCDATA)>
                 <!ATTLIST contenido enlace CDATA #REQUIRED>
 
         <!ATTLIST periodicos id CDATA #REQUIRED>
         <!ATTLIST periodicos tipo_clase (nacionales | internacionales) #IMPLIED>
         <!ATTLIST periodicos fecha_publicacion CDATA #REQUIRED>
-        <!ELEMENT periodicos (secciones+, indice)>
+        <!ELEMENT periodicos (indice, secciones_periodicos+)>
 
-            <!ELEMENT indice (#PCDATA)>
-
-            <!ATTLIST secciones tipo_seccion (economica | opinion | deportes | nacional | internacional) #IMPLIED>
-            <!ELEMENT secciones (articulos+)>
+            <!ATTLIST secciones_periodicos tipo_seccion (economica | opinion | deportes | nacional | internacional) #IMPLIED>
+            <!ELEMENT secciones_periodicos (articulos+)>
 
                 <!ATTLIST articulos autor CDATA #REQUIRED>
                 <!ELEMENT articulos (contenido)>
 
                     <!ATTLIST contenido enlace CDATA #REQUIRED>
-                    <!ELEMENT contenido (#PCDATA)>
 
 ]>
 
@@ -89,22 +78,22 @@
 
     <periodicos id="Peri1" tipo_clase="nacionales" fecha_publicacion="18-07-2001">
         <indice>indice periodico</indice>
-        <secciones tipo_seccion="economica">
+        <secciones_periodicos tipo_seccion="economica">
             <articulos autor="Javier">
                 <contenido enlace="enlace">contenido del articulo</contenido>
             </articulos>
             <articulos autor="Pepe">
                 <contenido enlace="enlace">contenido del articulo</contenido>
             </articulos>
-        </secciones>
-        <secciones tipo_seccion="opinion">
+        </secciones_periodicos>
+        <secciones_periodicos tipo_seccion="opinion">
             <articulos autor="Ismael">
                 <contenido enlace="enlace">contenido del articulo</contenido>
             </articulos>
             <articulos autor="Alberto">
                 <contenido enlace="enlace">contenido del articulo</contenido>
             </articulos>
-        </secciones>
+        </secciones_periodicos>
     </periodicos>
 
 </documentos>
