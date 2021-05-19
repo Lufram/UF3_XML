@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 
     <xs:element name="Biblioteca">
@@ -26,9 +26,9 @@
                                                             <xs:sequence>
                                                                 <xs:element name="titulo_capitulo" type="xs:string" />
                                                                 <xs:element name="contenido_libro" />
-                                                                    <xs:complexType>
-                                                                         <xs:attribute name="enlace" type="xs:string" use="required" />
-                                                                    </xs:complexType>
+                                                                <xs:complexType>
+                                                                    <xs:attribute name="enlace" type="xs:string" use="required" />
+                                                                </xs:complexType>
                                                             </xs:sequence>
                                                         </xs:complexType>
                                                     </xs:element>
@@ -42,13 +42,6 @@
                             <xs:element name="indice_libro" type="xs:string" />
                             <xs:element name="sinopsis" type="xs:string" />
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
-                        <xs:complexType>
-                            <xs:restriction base="xs:string">
-                                <xs:length value="5" />
-                                <xs:pattern value="[L][0-9](4)" />
-                            </xs:restriction>
-                        </xs:complexType>
                         <xs:attribute name="tipo_clase" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -93,13 +86,6 @@
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
-                                    <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
-                                    <xs:complexType>
-                                        <xs:restriction base="xs:string">
-                                            <xs:length value="5" />
-                                            <xs:pattern value="[R][0-9](4)" />
-                                        </xs:restriction>
-                                    </xs:complexType>
                                     <xs:attribute name="tipo_clase" use="required" />
                                     <xs:simpleType>
                                         <xs:restriction base="xs:string">
@@ -161,13 +147,6 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:string" use="required"></xs:attribute> 
-                        <xs:complexType>
-                            <xs:restriction base="xs:string">
-                                <xs:length value="5" />
-                                <xs:pattern value="[L|P|R][0-9](4)" />
-                            </xs:restriction>
-                        </xs:complexType>
                         <xs:attribute name="tipo_clase" use="required">
                             <xs:simpleType>
                                 <xs:restriction base="xs:string">
@@ -180,7 +159,13 @@
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
-
+            <xs:attribute name="id" type="xs:string" use="required"></xs:attribute>
+                 <xs:complexType>
+                     <xs:restriction base="xs:string">
+                         <xs:length value="5"/>
+                         <xs:pattern value="[L|P|R][0-9](4)"/>
+                     </xs:restriction>
+                 </xs:complexType>
         </xs:complexType>
     </xs:element>
 

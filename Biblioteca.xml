@@ -3,11 +3,13 @@
 
 <!DOCTYPE Biblioteca [
     <!ELEMENT Biblioteca (libros,revistas,periodicos)>
+
     <!ELEMENT libros (libro+)>
-    <!ATTLIST libros tipo_libros CDATA #REQUIRED>
+    <!ATTLIST libros tipo_libros CDATA #REQUIRED> 
     <!ELEMENT revistas (revista+)>
-    <!ATTLIST revistas tipo_revistas CDATA #REQUIRED>
+    <!ATTLIST revistas tipo_revistas CDATA #REQUIRED> 
     <!ELEMENT periodicos (periodico+)>
+
     <!ELEMENT libro (titulo_libro,capitulos,indice_libro,sinopsis)>
     <!ATTLIST libro id ID #REQUIRED>
     <!ATTLIST libro tipo_clase CDATA #REQUIRED>
@@ -15,12 +17,13 @@
     <!ELEMENT titulo_libro (#PCDATA)>
     <!ELEMENT capitulos (capitulo+)>
     <!ATTLIST capitulo num_paginas CDATA #REQUIRED>
-    <!ELEMENT capitulo (titulo_capitulo,contenido_libro)>
+    <!ELEMENT capitulo (titulo_capitulo,contenido_libro)> 
     <!ELEMENT titulo_capitulo (#PCDATA)>
     <!ELEMENT contenido_libro (#PCDATA)>
     <!ATTLIST contenido_libro enlace CDATA #REQUIRED>
     <!ELEMENT indice_libro (#PCDATA)>
     <!ELEMENT sinopsis (#PCDATA)>
+
     <!ELEMENT revista (titulo_revista,indice_revista,secciones_revista)>
     <!ATTLIST revista id ID #REQUIRED>
     <!ATTLIST revista tipo_clase CDATA #REQUIRED>
@@ -28,17 +31,19 @@
     <!ELEMENT titulo_revista (#PCDATA)>
     <!ELEMENT indice_revista (#PCDATA)>
     <!ELEMENT secciones_revista (seccion_revista+)>
-    <!ATTLIST seccion_revista num_paginas CDATA #REQUIRED>
-    <!ELEMENT seccion_revista (contenido_revista+)>
-    <!ELEMENT contenido_revista (#PCDATA)>
+    <!ELEMENT seccion_revista ANY>
+    <!ATTLIST seccion_revista num_paginas CDATA #REQUIRED> 
+    <!ELEMENT seccion_revista (contenido_revista+)>  
+    <!ELEMENT contenido_revista (#PCDATA) >
     <!ATTLIST contenido_revista enlace CDATA #REQUIRED>
+
     <!ELEMENT periodico (secciones_periodico,indice)>
     <!ATTLIST periodico id ID #REQUIRED>
     <!ATTLIST periodico tipo_periodico (nacional|internacional) #IMPLIED>
     <!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
     <!ELEMENT secciones_periodico (seccion_periodico+)>
     <!ELEMENT seccion_periodico (articulo+)>
-    <!ATTLIST seccion_periodico tipo_seccion (economia|opinion|deportes|nacional|internacional) #IMPLIED>
+    <!ATTLIST seccion_periodico tipo_seccion  (economia|opinion|deportes|nacional|internacional)  #IMPLIED> 
     <!ELEMENT articulo (contenido_periodico)>
     <!ELEMENT contenido_periodico (#PCDATA)>
     <!ATTLIST articulo autor CDATA #REQUIRED>
@@ -55,10 +60,10 @@
         <libro id="L0001" tipo_clase="novela" num_paginas="198">
             <titulo_libro>Demian</titulo_libro>
             <capitulos>
-                <capitulo num_paginas="21">
+                 <capitulo num_paginas="21"> 
                     <titulo_capitulo>El pajaro rompe el cascaron</titulo_capitulo>
                     <contenido_libro enlace="http://bibliotecadigital.ilce.edu.mx/Colecciones/ObrasClasicas/_docs/Demian_HermannHesse.pdf"></contenido_libro>
-                </capitulo>
+                 </capitulo>  
             </capitulos>
             <indice_libro>
                 1.Los dos mundos....................2 
@@ -94,7 +99,7 @@
             </indice_revista>
             <secciones_revista>
                 <seccion_revista num_paginas="5">
-                    <contenido_revista enlace="https://www.muyinteresante.es/revista-muy/noticias-muy/articulo/la-verdad-del-coronavirus-en-la-nueva-revista-muy-interesante-581584706205"></contenido_revista>
+                    <contenido_revista  enlace="https://www.muyinteresante.es/revista-muy/noticias-muy/articulo/la-verdad-del-coronavirus-en-la-nueva-revista-muy-interesante-581584706205"></contenido_revista>
                 </seccion_revista>
             </secciones_revista>
         </revista>
@@ -104,7 +109,7 @@
     <!-- Cada seccion puede ser tipo: economia, opinion, deportes, nacional o internacional.-->
     <periodicos>
         <periodico id="P0001" tipo_periodico="nacional" fecha_publicacion="16 de mayo de 2021">
-            <secciones_periodico>
+            <secciones_periodico >
                 <seccion_periodico tipo_seccion="deportes">
                     <articulo autor="Jorge Noguera">
                         <contenido_periodico enlace="https://as.com/tenis/?omnil=mpal">Rafa Nadal es el nuevo campeón del Masters 1.000 de Roma 2021 y, como tal, le corresponde el cheque más jugoso de un montante total de premios en metálico que esta edición asciende a 2.082.960 euros, un 39,9%menos que en la anterior.
